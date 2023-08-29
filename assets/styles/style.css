@@ -1,0 +1,33 @@
+
+/*
+formulario con color de fondo, ancho, margen centrado y margen interno
+*/
+form{
+    background-color:rgb(206, 255, 255);
+    width: 300px;
+    margin: 0 auto; 
+    padding: 30px;
+}
+
+/*Titulo centrado, con color de fondo y fuentes de letras*/
+h1{
+    text-align: center;
+    background-color: rgb(206, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/*Imagen de fondo en la pagina*/
+body{
+    background-image: url("/assets/img//fondo.jpg");
+}
+
+/*Etiquetas label con tamaño de 18px y fuentes de letras*/
+label{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Ancho de los inputs*/
+input{
+    width: 300px;
+}

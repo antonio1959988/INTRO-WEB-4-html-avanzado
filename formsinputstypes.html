@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios y Tipos de Entrada</h1>
+    <form action="procesar_formulario" method="post">Formulario Consultorio Dental</form> <!--Se utiliza para crear un formulario en html que permite a los usuarios ingresar y enviar datos-->
+    <br>
+    <h3>Etiqueta Input</h3> <!--Esta etiqueta se utiliza para crear campos de entrada en un formulario-->
+    <input type="text" name="usuario" placeholder="Usuario"> 
+    <!--Type: define el tipo de entrada (texto, correo, contraseña, etc)-->
+    <!--name: es el nombre del campo utilizado para identificar el dato cuando se envia nuestro formulario-->
+    <!--placeholder: nos va a proporcionar un texto ejemplo dentro de nuestro campo de entrada-->
+    <br>
+    <h3>Etiqueta Label</h3>
+    <!--se utiliza para etiquetar un elemento de entrada en un formulario, esto mejora la accesibilidad y la experiencia de usuario-->
+    <label for="uasuario">Usuario</label>
+    <input type="text" id="usuario" name="usuario">
+    <br>
+    <br>
+    <h3>Etiqueta button</h3>
+    <!--Se utiliza para crear botones en un formulario-->
+    <button type="submit">Enviar</button>
+    <button type="reset">Restablecer</button>
+    <!--type: define el tipo de botón (submit, reset, button)-->
+    <!--name: es el nombre del boton, utilizado para identificar el boton cuando se envio el formulario-->
+    <br>
+    <br>
+    <h3>Etiqueta area de texto</h3>
+    <!--Seutiliza para crear campos de texto en un formulario-->
+    <textarea name="comentario" id="comentario" cols="50" rows="5">Escriba un comentario</textarea>
+    <br>
+    <br>
+    <h3>Etiqueta select</h3><!--TAREA-->
+    <br>
+    <br>
+    <br>
+    <h1>Tipos de Entrada</h1>
+    <!--Permiten a los usuarios ingresar diferentes tipos de datos en un formulario-->
+    <h4>Enviar (submit)</h4>
+    <!--Crea un boton que, cuando hace clic envia el formulario a una ubicacion especifica-->
+    <form action="procesar_formulario" method="post">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <h4>Numero (number)</h4>
+    <!--Crear un campo de entrada para que el usuario ingresenumeros-->
+    <input type="number" name="numero">
+    <br>
+    <h4>Contraseña (password)</h4>
+    <!--va a crear un campo de entrada para que el usuario ingrese una contraseña-->
+    <input type="password" name="contraseña">
+    <br>
+    <h4>Correo (email)</h4>
+    <!--crear un campo para que el usuario ingrese un correo-->
+    <input type="email" name="correo" min="2003-00-00">
+    <br>
+    <h4>Fecha (date)</h4>
+    <!--nos va a crear un campo de entrada, va a permitir a los usuarios ingresar una fecha-->
+    <!--hay un atributo que permite establecer un mínimo y un máximo tanto para campos del tipo date y number. Tal cual se llama así "min y max", y podemos establecer límites en la fecha que se muestra (por ejemplo min="2003-08-28" max="1924-08-28). Si necesitan validar sólo el número de la edad (>18), si se puede hacer con validaciones de JS-->
+    <input type="date" name="fecha">
+    <br>
+    <h4>Hora (time)</h4>
+    <!--crea un campo de entrada, permite al usuario elegir una hora-->
+    <input type="time" name="hora">
+    <br>
+    <h4>Telefono (tel)</h4>
+    <!--crea un campo de entrada, permite al usuario ingresar un telefono-->
+    <input type="tel" name="telefono">
+    <br>
+    <h4>Archivo (file)</h4>
+    <!--va a crear un campo de entrada, permite al usuario ingresar un archivo-->
+    <input type="file" name="Archivo">
+
+
+
+</body>
+</html>

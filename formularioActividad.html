@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita</title>
+    <!--Referencia al documento css-->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <h1>¡Programa tu valoración en cualquiera de nuestras sucursales!</h1>
+    <!--Inicio del formulaeio con metodo post, sin accion especifica por el momento-->
+    <form action="procesar_formulario" method="post">
+
+        <!--Label nombreusuario y textbox nombre de usuaeio-->
+        <label for="nombreusuario">Nombre</label>
+        <br>
+        <input type="text" name="usuario" placeholder="Ingresa tu nombre"> <!--input tipo texto y mensaje por defecto-->
+        <br>
+        <br>
+
+        <!--Label telefono y textbox telefono-->
+        <label for="telefono">Teléfono</label>
+        <br>
+        <input type="tel" name="telusuario" placeholder="Ingresa tu número de teléfono"> <!--Input tipo texto y mensaje por defecto-->
+        <br>
+        <br>
+
+        <!--Label correo y textbox correo electronico-->
+        <label for="correo">Correo Electrónico</label>
+        <br>
+        <input type="email" name="mailusuario" placeholder="Ingresa tu email"> <!--Input tipo correo, mensaje por defecto-->
+        <br>
+        <br>
+
+        <!--Label fecha y textbox de la fecha a asignar cita-->
+        <label for="fecha">Fecha de Cita</label>
+        <br>
+        <input type="date" name="fechacitausuario"> <!--Input tipo fecha-->
+        <br>
+        <br>
+
+        <!--Label hora y textbox de la hora a asignar cita-->
+        <label for="hora">Hora de Cita</label>
+        <br>
+        <input type="time" name="horacitausuario"> <!--Input tipo hora-->
+        <br>
+        <br>
+
+        <!--Label servicio y etiqueta select con opciones de os servicios que hay-->
+        <label for="servicio">Servicio Requerido</label>
+        <br>
+        <select id="servicios" name="serviciousuario"> 
+            <!--Caption con los distintos servicios
+            El texto que hay entre cada etiqueta será mostrado en la lista de opciones (combobox)-->
+            <option value="" disabled selected>Selecciona un Servicio</option> <!--atributo disabled muestra una opcion no elegible y selected es la opción por defecto-->
+            <option value="valoracion">Valoración (Gratis)</option>
+            <option value="limpieza">Limpieza dental</option>
+            <option value="extsimple">Extracción Simple</option>
+            <option value="extjuicio">Extracción de muelas del juicio</option>
+            <option value="blanc">Blanqueamiento Dental (Presencial y a domicilio)</option>
+            <option value="tratcaries">Tratamiento de caries</option>
+            <option value="odonto">Odontologia general y familiar</option>
+            <option value="invisalign">Invisalign</option>
+        </select>
+        <br>
+        <br>
+
+        <!--Label comentarios y un área de texto con los comentarios adicionales del cliente-->
+        <label for="comentarios">Comentarios Adicionales</label>
+        <br>
+        <textarea name="comentarios" id="comentario" cols="40" rows="6" placeholder="Escribe aqui tus comentarios"></textarea>
+        <br> <!--los atributos cols y rows especifican el tamaño del textarea, placeholder muestra texto por defecto-->
+        <br>
+
+        <!--botones de enviar informacion (submit) y borrar datos ingresados (reset)-->
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+    </form>
+</body>
+</html>
